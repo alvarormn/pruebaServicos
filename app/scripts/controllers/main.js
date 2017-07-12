@@ -8,6 +8,6 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-  .controller('MainCtrl',['myService', '$scope', function (myService, $scope) {
+  .controller('MainCtrl', function (myService, $scope) {
     console.log(myService.data.name);
   });
