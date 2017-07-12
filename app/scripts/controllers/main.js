@@ -9,5 +9,6 @@
  */
 angular.module('testApp')
   .controller('MainCtrl', function (myService, $scope) {
-    console.log(myService.data.name);
+    $scope.data =  myService();
+    console.log($scope.data.Nombres);
   });
